@@ -1,0 +1,42 @@
+<!-- front-end/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exam Hosting Application</title>
+</head>
+<body>
+    <div id="question-form">
+        <h2>Create Question</h2>
+        <form id="create-question-form">
+            <label for="question-text">Question Text:</label>
+            <input type="text" id="question-text" required>
+            
+            <label for="options">Options (comma-separated):</label>
+            <input type="text" id="options" required>
+
+            <label for="correct-option">Correct Option:</label>
+            <input type="text" id="correct-option" required>
+
+            <button type="button" onclick="createQuestion()">Create Question</button>
+        </form>
+    </div>
+
+    <div id="exam-form">
+        <h2>Create Exam</h2>
+        <form id="create-exam-form">
+            <label for="exam-duration">Exam Duration (minutes):</label>
+            <input type="number" id="exam-duration" required>
+
+            <label for="exam-questions">Select Questions (comma-separated):</label>
+            <input type="text" id="exam-questions" required>
+
+            <button type="button" onclick="createExam()">Create Exam</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
